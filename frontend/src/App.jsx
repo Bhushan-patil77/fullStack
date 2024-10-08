@@ -20,7 +20,7 @@ function App() {
     .catch((err)=>{console.log(err)})
     .finally(()=>{ getUsers() })
   }
-
+ 
   const getUsers = () =>{
     fetch('http://localhost:3000/getUsers')
     .then((response)=>{return response.json()})
